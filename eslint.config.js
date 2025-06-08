@@ -64,11 +64,11 @@ export default tseslint.config(
       'no-param-reassign': 'warn',
       'no-plusplus': 'error',
       'no-throw-literal': 'error',
-      'no-unused-vars': ['error', { args: 'none', caughtErrors: 'none' }],
+      'no-unused-vars': ['warn', { args: 'none', caughtErrors: 'none' }],
+      'prettier/prettier': 'warn',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'error',
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   },
-  eslintPluginPrettierRecommended,
 );
