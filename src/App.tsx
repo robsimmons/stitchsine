@@ -15,7 +15,7 @@ function App() {
         {Array.from({ length: 99 }).map((_, i) => {
           const x = i * 10 + 5;
 
-          const { exact, approx } = approxCos(Math.round, amplitude, resolution, i);
+          const { approx } = approxCos(Math.round, amplitude, resolution, i);
           const y = (approx + amplitude / 2) * 10;
 
           return (
